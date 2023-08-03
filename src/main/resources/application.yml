@@ -1,0 +1,16 @@
+app:
+  USERNAME: nsdlTest
+  PASSWORD: Test@123
+  ASPID: 08ABACS8130M000832
+  AUTH_URL: https://test.proteangsp.co.in/gus/irp/nic/eivital/v1.04/auth
+  GET_E-INVOICE_URL: https://test.proteangsp.co.in/gus/irp/nic/eicore/v1.03/Invoice/irn/
+  GENERATE_E-INVOICE_URL: https://test.proteangsp.co.in/gus/irp/nic/eicore/v1.03/Invoice
+server:
+  ssl:
+    enabled: true
+    key-store-type: JKS
+    key-store: classpath:static/keys/keystore.p12
+    key-store-password: password
+    key-alias: 1
+    trust-certificate: classpath:static/keys/proeffico.cabundle
+    trust-certificate-private-key: classpath:static/keys/p.key
